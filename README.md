@@ -38,3 +38,4 @@ Ele funciona em 4 etapas principais:
    - Calcula e exibe o **total geral de passageiros** transportados.  
 
 Dessa forma, o algoritmo permite identificar quais linhas tiveram maior movimentação de passageiros e também o volume total registrado.  
+Utilizamos o Visual Studio Code para desenvolve-lo.
