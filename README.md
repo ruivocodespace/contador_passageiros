@@ -20,25 +20,7 @@ esse investimento. Com isso, é possível identificar quais linhas são mais uti
 - Um arquivo out.csv no mesmo diretório do script.
 - Formato do arquivo CSV: linha,entrada1:saida1,entrada2:saida2,entrada3:saida3,...
 ## 3.3 Código Python
-
-buss_list = []
-
-with open('out.csv', 'r') as arquivo:
-    for linha in arquivo:
-         
-        str_arr = linha.strip().split(",")
-        valores = [int(item.split(':')[0]) for item in str_arr[1:]]
-        soma = sum(valores)
-
-        found = False
-        for linha in buss_list:
-            if linha["line"] == str_arr[0]:
-                found = True
-                linha["pass"] += soma
-        if not found:
-            buss_list.append({"line": str_arr[0], "pass": soma})
-buss_list = sorted(buss_list, key=lambda x: x["pass"], reverse=True) 
-print(buss_list)
+[Clique aqui para visualizar](https://github.com/ruivocodespace/contador_passageiros/blob/master/main.py)
 ## 3.4 Instruções de Execução
 - Certifique-se de que o arquivo out.csv esteja no mesmo diretório do script Python.
 - Execute o script usando: python nome_do_script.py
