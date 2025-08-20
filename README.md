@@ -44,8 +44,7 @@ buss_list = sorted(buss_list, key=lambda x: x["pass"], reverse=True)
 print(buss_list)
 ## 3.4 Instruções de Execução
 - Certifique-se de que o arquivo out.csv esteja no mesmo diretório do script Python.
-- Execute o script usando:
-- python nome_do_script.py
+- Execute o script usando: python nome_do_script.py
 - O programa exibirá a lista de linhas com total de passageiros e o total geral acumulado.
 
 ## 📝 Explicação do Algoritmo
