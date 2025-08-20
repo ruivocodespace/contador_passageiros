@@ -6,15 +6,48 @@ movimento, algumas linhas estavam sobrecarregadas e por isso deseja ampliar a
 quantidade de ônibus nestas linhas que têm maior volume de passageiros.
 Porém, para tal, necessita de uma forma confiável, devido ao valor alto de
 investimento em uma unidade de transporte, estabelecer quais linhas poderão receber
-esse investimento.
+esse investimento. Dessa forma, o algoritmo permite identificar quais linhas tiveram maior movimentação de passageiros e também o volume total registrado
 ### 1.1 Solução 
 > Desenvolver um algoritmo que calcule a quantidade de usuários que circulam no ônibus de uma linha por viagem realizada nos horários de pico, utilizando o kit fornecido conforme contexto do problema.
 
 ## 2. fluxograma
-![Fluxograma](img/fluxograma.png)
-
-
+![Fluxograma](img/fluxograma.png) //
+> Fluxograma desenvolvido com Lucidchart
 ## 3. O Algoritmo
+## Linguagem e IDE
+> Linguagem: Python
+> IDE: Visual Studio Code
+
+## 3.2 Infraestrutura necessária
+> Um arquivo out.csv no mesmo diretório do script.
+> Formato do arquivo CSV: linha,entrada1:saida1,entrada2:saida2,entrada3:saida3,...
+
+## 3.3 Código Python
+
+buss_list = []
+
+with open('out.csv', 'r') as arquivo:
+    for linha in arquivo:
+         
+        str_arr = linha.strip().split(",")
+        valores = [int(item.split(':')[0]) for item in str_arr[1:]]
+        soma = sum(valores)
+
+        found = False
+        for linha in buss_list:
+            if linha["line"] == str_arr[0]:
+                found = True
+                linha["pass"] += soma
+        if not found:
+            buss_list.append({"line": str_arr[0], "pass": soma})
+buss_list = sorted(buss_list, key=lambda x: x["pass"], reverse=True) 
+print(buss_list)
+## 3.4 Instruções de Execução
+> Certifique-se de que o arquivo out.csv esteja no mesmo diretório do script Python.
+> Execute o script usando:
+> python nome_do_script.py
+> O programa exibirá a lista de linhas com total de passageiros e o total geral acumulado.
+
 ## 📝 Explicação do Algoritmo
 
 O algoritmo foi desenvolvido em **Python** para processar os dados de um arquivo `CSV` contendo informações sobre as linhas de ônibus e a quantidade de passageiros registrados.  
@@ -35,7 +68,5 @@ Ele funciona em 4 etapas principais:
 
 4) **Exibição dos resultados**  
    - Mostra o total de passageiros de cada linha.  
-   - Calcula e exibe o **total geral de passageiros** transportados.  
+   - Calcula e exibe o **total geral de passageiros** transportados.
 
-Dessa forma, o algoritmo permite identificar quais linhas tiveram maior movimentação de passageiros e também o volume total registrado.  
-Utilizamos o Visual Studio Code para desenvolve-lo.
