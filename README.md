@@ -13,7 +13,8 @@ esse investimento. Com isso, é possível identificar quais linhas são mais uti
 > Fluxograma desenvolvido com Lucidchart
 ![Fluxograma](img/fluxograma.png)
 ## 3. O Algoritmo
-## Linguagem e IDE
+
+## 3.1 Linguagem e IDE
 - Linguagem: Python
 - IDE: Visual Studio Code
 ## 3.2 Infraestrutura necessária
