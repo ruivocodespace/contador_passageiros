@@ -6,7 +6,7 @@ movimento, algumas linhas estavam sobrecarregadas e por isso deseja ampliar a
 quantidade de ônibus nestas linhas que têm maior volume de passageiros.
 Porém, para tal, necessita de uma forma confiável, devido ao valor alto de
 investimento em uma unidade de transporte, estabelecer quais linhas poderão receber
-esse investimento. Dessa forma, o algoritmo permite identificar quais linhas tiveram maior movimentação de passageiros e também o volume total registrado
+esse investimento. Com isso, é possível identificar quais linhas são mais utilizadas, auxiliando no planejamento do transporte público, na melhoria da frota e na tomada de decisões estratégicas.
 ### 1.1 Solução 
 > Desenvolver um algoritmo que calcule a quantidade de usuários que circulam no ônibus de uma linha por viagem realizada nos horários de pico, utilizando o kit fornecido conforme contexto do problema.
 
