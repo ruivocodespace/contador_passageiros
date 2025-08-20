@@ -15,12 +15,12 @@ esse investimento. Dessa forma, o algoritmo permite identificar quais linhas tiv
 > Fluxograma desenvolvido com Lucidchart
 ## 3. O Algoritmo
 ## Linguagem e IDE
-> Linguagem: Python
-> IDE: Visual Studio Code
+- Linguagem: Python
+- IDE: Visual Studio Code
 
 ## 3.2 Infraestrutura necessária
-> Um arquivo out.csv no mesmo diretório do script.
-> Formato do arquivo CSV: linha,entrada1:saida1,entrada2:saida2,entrada3:saida3,...
+- Um arquivo out.csv no mesmo diretório do script.
+- Formato do arquivo CSV: linha,entrada1:saida1,entrada2:saida2,entrada3:saida3,...
 
 ## 3.3 Código Python
 
@@ -43,10 +43,10 @@ with open('out.csv', 'r') as arquivo:
 buss_list = sorted(buss_list, key=lambda x: x["pass"], reverse=True) 
 print(buss_list)
 ## 3.4 Instruções de Execução
-> Certifique-se de que o arquivo out.csv esteja no mesmo diretório do script Python.
-> Execute o script usando:
-> python nome_do_script.py
-> O programa exibirá a lista de linhas com total de passageiros e o total geral acumulado.
+- Certifique-se de que o arquivo out.csv esteja no mesmo diretório do script Python.
+- Execute o script usando:
+- python nome_do_script.py
+- O programa exibirá a lista de linhas com total de passageiros e o total geral acumulado.
 
 ## 📝 Explicação do Algoritmo
 
