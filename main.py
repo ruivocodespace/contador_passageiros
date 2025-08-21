@@ -13,7 +13,7 @@ with open('out.csv', 'r') as arquivo:
         soma = sum(valores)
 
         # Verifica se a linha já existe em buss_list
-        found = False
+        found = False #cria uma variável booleana para marcar se a linha já existe
         for linha in buss_list:
             if linha["line"] == str_arr[0]:
                 found = True
