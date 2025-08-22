@@ -1,7 +1,4 @@
 # ***Contador de Passageiros***
-
->Peterson Ruivo, Victor Aires
-
 ## 1. Justificativa
 > A empresa de transporte do seu município, identificou que em horários de maior
 movimento, algumas linhas estavam sobrecarregadas e por isso deseja ampliar a
@@ -29,7 +26,7 @@ esse investimento. Com isso, é possível identificar quais linhas são mais uti
 - Execute o script usando: python nome_do_script.py
 - O programa exibirá a lista de linhas com total de passageiros e o total geral acumulado.
 
-## 📝 Explicação do Algoritmo
+## 4 Explicação do Algoritmo
 
 O algoritmo foi desenvolvido em **Python** para processar os dados de um arquivo `CSV` contendo informações sobre as linhas de ônibus e a quantidade de passageiros registrados.  
 
@@ -51,3 +48,10 @@ Ele funciona em 4 etapas principais:
    - Mostra o total de passageiros de cada linha.  
    - Calcula e exibe o **total geral de passageiros** transportados.
 
+
+## 5 Desenvolvedores
+>Peterson Ruivo [Linkedin](https://www.linkedin.com/in/peterson-ruivo-637345199/)
+>Victor Gabriel [Linkedin](https://www.linkedin.com/in/victor-silva-93621636a/)
+
+## 6 Apresentação
+>[Canva](https://www.canva.com/design/DAGwpSbFvkY/_aLs12ph3mP2Sy1tXH8g5w/edit)
