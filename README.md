@@ -51,7 +51,7 @@ Ele funciona em 4 etapas principais:
 
 ## 5 Desenvolvedores
 >Peterson Ruivo [Linkedin](https://www.linkedin.com/in/peterson-ruivo-637345199/)
->Victor Gabriel [Linkedin](https://www.linkedin.com/in/victor-silva-93621636a/)
+Victor Gabriel [Linkedin](https://www.linkedin.com/in/victor-silva-93621636a/)
 
 ## 6 Apresentação
 >[Canva](https://www.canva.com/design/DAGwpSbFvkY/_aLs12ph3mP2Sy1tXH8g5w/edit)
