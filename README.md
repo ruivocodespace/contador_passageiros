@@ -1,58 +1,116 @@
-# ***Contador de Passageiros***
+# 🚍 Contador de Passageiros
+
 ## 1. Justificativa
-> A empresa de transporte do seu município, identificou que em horários de maior
-movimento, algumas linhas estavam sobrecarregadas e por isso deseja ampliar a
-quantidade de ônibus nestas linhas que têm maior volume de passageiros.
-Porém, para tal, necessita de uma forma confiável, devido ao valor alto de
-investimento em uma unidade de transporte, estabelecer quais linhas poderão receber
-esse investimento. Com isso, é possível identificar quais linhas são mais utilizadas, auxiliando no planejamento do transporte público, na melhoria da frota e na tomada de decisões estratégicas.
-## 1.1 Solução 
-> Desenvolver um algoritmo que calcule a quantidade de usuários que circulam no ônibus de uma linha por viagem realizada nos horários de pico, utilizando o kit fornecido conforme contexto do problema.
-## 2. fluxograma
-> Fluxograma desenvolvido com Lucidchart
+
+A empresa de transporte do município identificou que, em horários de maior movimento, algumas linhas estavam sobrecarregadas.  
+Para ampliar a quantidade de ônibus nas linhas com maior volume de passageiros, é necessário identificar com precisão quais são as mais utilizadas.
+
+Como o investimento em novos veículos é elevado, a empresa precisa de uma forma confiável de análise de dados para apoiar a tomada de decisões estratégicas.
+
+---
+
+## 1.1 Solução Proposta
+
+Desenvolver um algoritmo em Python capaz de:
+
+- Processar um arquivo CSV contendo registros de passageiros por linha.
+- Calcular o total de passageiros transportados por linha.
+- Ordenar as linhas por volume de passageiros.
+- Apresentar os dados consolidados para auxiliar na tomada de decisão.
+
+---
+
+## 2. Fluxograma
+
+Fluxograma desenvolvido com Lucidchart para modelagem da solução:
+
 ![Fluxograma](img/fluxograma.png)
+
+---
+
 ## 3. O Algoritmo
 
-## 3.1 Linguagem e IDE
-- Linguagem: Python
-- IDE: Visual Studio Code
-## 3.2 Infraestrutura necessária
-- Um arquivo out.csv no mesmo diretório do script.
-- Formato do arquivo CSV: linha,entrada1:saida1,entrada2:saida2,entrada3:saida3,...
-## 3.3 Código Python
-[Clique aqui para visualizar](https://github.com/ruivocodespace/contador_passageiros/blob/master/main.py)
-## 3.4 Instruções de Execução
-- Certifique-se de que o arquivo out.csv esteja no mesmo diretório do script Python.
-- Execute o script usando: python nome_do_script.py
-- O programa exibirá a lista de linhas com total de passageiros e o total geral acumulado.
+### 3.1 Linguagem e IDE
 
-## 4 Explicação do Algoritmo
+- Linguagem: Python  
+- IDE: Visual Studio Code  
 
-O algoritmo foi desenvolvido em **Python** para processar os dados de um arquivo `CSV` contendo informações sobre as linhas de ônibus e a quantidade de passageiros registrados.  
+### 3.2 Infraestrutura Necessária
 
-Ele funciona em 4 etapas principais:  
+- Arquivo `out.csv` no mesmo diretório do script.
+- Formato do CSV: linha,entrada1:saida1,entrada2:saida2,entrada3:saida3,...
+- O algoritmo utiliza apenas o valor de entrada (antes do “:”) para calcular o total de passageiros.
 
-1) **Leitura dos dados**  
-   - O programa abre o arquivo `out.csv` e lê todas as linhas.  
-   - Cada linha contém o nome da linha de ônibus e os valores correspondentes aos passageiros que entraram.  
+---
 
-2) **Tratamento e soma dos passageiros**  
-   - Os valores são convertidos para números e somados.  
-   - Se a linha de ônibus já existir na lista, o programa adiciona os novos passageiros ao total acumulado.  
-   - Caso contrário, cria um novo registro para essa linha.  
+### 3.3 Código Fonte
 
-3) **Organização das linhas**  
-   - Todas as linhas são ordenadas em ordem decrescente, da que teve mais passageiros para a que teve menos.  
+- Arquivo principal: main.py
 
-4) **Exibição dos resultados**  
-   - Mostra o total de passageiros de cada linha.  
-   - Calcula e exibe o **total geral de passageiros** transportados.
+---
 
+### 3.4 Instruções de Execução
 
-## 5 Desenvolvedores
->Peterson Ruivo [Linkedin](https://www.linkedin.com/in/peterson-ruivo-637345199/)
+1. Certifique-se de que o arquivo `out.csv` esteja no mesmo diretório do script.
+2. Execute o programa com:
 
->Victor Gabriel [Linkedin](https://www.linkedin.com/in/victor-aires-93621636a/)
+```bash
+python main.py
 
-## 6 Apresentação
->[Canva](https://www.canva.com/design/DAGwpSbFvkY/_aLs12ph3mP2Sy1tXH8g5w/edit)
+---
+
+## 4. Explicação do Algoritmo
+
+O algoritmo foi desenvolvido em Python para processar dados de um transporte público a partir de um arquivo CSV.
+
+### 1️⃣ Leitura dos Dados
+
+- O programa abre o arquivo `out.csv`.
+- Cada linha é separada utilizando vírgula como delimitador.
+- Os valores numéricos são extraídos antes do caractere “:”.
+
+### 2️⃣ Tratamento e Consolidação
+
+- Os valores são convertidos para inteiros.
+- A soma é realizada por linha.
+- Caso a linha já exista na estrutura de dados, o valor é acumulado.
+- Caso contrário, um novo registro é criado.
+
+### 3️⃣ Organização dos Resultados
+
+- As linhas são ordenadas em ordem decrescente utilizando `sorted()` com `lambda`.
+
+### 4️⃣ Exibição
+
+- O programa exibe a lista final consolidada.
+- Mostra também o total geral acumulado de passageiros.
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- Leitura de arquivos
+- Manipulação de strings
+- List comprehension
+- Estruturas de dados (lista de dicionários)
+- Ordenação com função lambda
+- Processamento e consolidação de dados
+- Desenvolvimento colaborativo
+
+---
+
+## 👥 Desenvolvedores
+
+- Peterson Ruivo
+- Victor Gabriel
+
+Projeto desenvolvido em colaboração como atividade acadêmica.
+
+---
+
+## 📊 Status
+
+- ✔️ Projeto funcional
+- ✔️ Processamento e consolidação de dados implementados
+- 🔄 Possíveis melhorias futuras: tratamento de erros do arquivo e uso da biblioteca `csv`
+  
